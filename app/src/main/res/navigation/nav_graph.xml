@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/setupFragment">
+    <fragment
+        android:id="@+id/trackingFragment2"
+        android:name="com.khusniddinov.trackerapp.ui.fragments.TrackingFragment"
+        android:label="TrackingFragment" >
+        <action
+            android:id="@+id/action_trackingFragment2_to_runFragment2"
+            app:destination="@id/runFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/statisticsFragment2"
+        android:name="com.khusniddinov.trackerapp.ui.fragments.StatisticsFragment"
+        android:label="StatisticsFragment" />
+    <fragment
+        android:id="@+id/setupFragment"
+        android:name="com.khusniddinov.trackerapp.ui.fragments.SetupFragment"
+        android:label="SetupFragment" >
+        <action
+            android:id="@+id/action_setupFragment_to_runFragment2"
+            app:destination="@id/runFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/runFragment2"
+        android:name="com.khusniddinov.trackerapp.ui.fragments.RunFragment"
+        android:label="RunFragment" >
+        <action
+            android:id="@+id/action_runFragment2_to_trackingFragment2"
+            app:destination="@id/trackingFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment3"
+        android:name="com.khusniddinov.trackerapp.ui.fragments.SettingsFragment"
+        android:label="SettingsFragment" />
+</navigation>
